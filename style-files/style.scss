@@ -13,6 +13,13 @@ body {
 
 .main_section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main_container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 4.43rem 1.5rem;
@@ -163,7 +170,7 @@ body {
 }
 
 @media (min-width: 40em) {
-    .main_section {
+    .main_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "t1 t1 t3" "t2 t4 t4" "t5 t5 t5";
@@ -191,11 +198,11 @@ body {
 }
 
 @media (min-width: 64em) {
-    .main_section {
+    .main_container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "t1 t1 t2 t5" "t3 t4 t4 t5";
         gap: 1.87rem;
     }
-    
+
 }
